@@ -7,15 +7,12 @@ python main.py
     --vocab /path/to/project/root/data/mimic3/vocab.csv \
     --Y full \
     --model MultiResCNN \
-    --decoder HierarchicalHyperbolic \
+    --decoder Hierarchical \
     --criterion prec_at_8 \
     --MAX_LENGTH 4096 \
-    --batch_size 8  \
-    --lr 5e-5 \
+    --batch_size 3  \
+    --lr 5e-3 \
     --depth 5 \
-    --n_epochs '2,3,5,10,500'  \
+    --n_epochs '2,3,3,3,5'  \
     --num_workers 8 \
     --hyperbolic_dim 50 \
-    --loss ASL \
-    --asl_config "1,0,0.05" \
-    --cat_hyperbolic

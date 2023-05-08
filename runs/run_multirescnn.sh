@@ -10,6 +10,6 @@ python main.py
     --decoder RandomlyInitialized \
     --criterion prec_at_8 \
     --MAX_LENGTH 4096 \
-    --batch_size 8  \
-    --lr 5e-5 \
+    --batch_size 3  \
+    --lr 5e-3 \
     --num_workers 8 \
