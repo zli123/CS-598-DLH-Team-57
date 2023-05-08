@@ -3,6 +3,8 @@
 # Replicability Study for MLHC 2022 paper HiCu: Leveraging Hierarchy for Curriculum Learning in Automated ICD Coding
 This repo contains code for our MLHC 2022 paper [HiCu: Leveraging Hierarchy for Curriculum Learning in Automated ICD Coding](https://arxiv.org/abs/2208.02301).
 
+Our own juypternotebook version of the code is included here which was fed into Google Colab. main.py, util.models, ultil.losses and util.losses have small modifications made to them.
+
 # Sections below have been borrowed from the original repository: [HiCu](https://github.com/wren93/HiCu-ICD)
 
 Setup
