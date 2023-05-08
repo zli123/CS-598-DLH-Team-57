@@ -3,9 +3,6 @@ import pandas as pd
 from collections import Counter, defaultdict
 import csv
 import operator
-import nltk
-nltk.download('punkt')
-
 from utils.options import args
 from utils.utils import build_vocab, word_embeddings, fasttext_embeddings, gensim_to_fasttext_embeddings, gensim_to_embeddings, \
     reformat, write_discharge_summaries, concat_data, split_data

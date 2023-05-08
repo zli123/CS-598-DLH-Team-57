@@ -130,7 +130,7 @@ def fasttext_embeddings(Y, notes_file, embedding_size, min_count, n_iter):
     modelname = f"processed_{Y}_{embedding_size}.fasttext"
     sentences = ProcessedIter(Y, notes_file)
 
-    model = fasttext.FastText(size=embedding_size, min_count=min_count, iter=n_iter)
+    model = fasttext.FastText(vector_size=embedding_size, min_count=min_count, iter=n_iter)
     print("building fasttext vocab on %s..." % (notes_file))
 
     model.build_vocab(sentences)
