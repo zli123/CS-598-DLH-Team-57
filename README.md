@@ -1,5 +1,9 @@
-# HiCu-ICD
+# Course Project of Team 57, CS 598 DLH
+
+# Replicability Study for MLHC 2022 paper HiCu: Leveraging Hierarchy for Curriculum Learning in Automated ICD Coding
 This repo contains code for our MLHC 2022 paper [HiCu: Leveraging Hierarchy for Curriculum Learning in Automated ICD Coding](https://arxiv.org/abs/2208.02301).
+
+# Sections below have been borrowed from the original repository: [HiCu](https://github.com/wren93/HiCu-ICD)
 
 Setup
 -----
@@ -13,10 +17,6 @@ Install the following packages to run the code in this repository:
 * torch==1.7.1
 * tqdm==4.62.3
 * transformers==4.5.1
-
-```bash
-pip install -r requirements.txt
-```
 
 Data Preprocessing
 -----
@@ -43,10 +43,9 @@ After setting up the files, run the following command to preprocess the data:
 python preprocess_mimic3.py
 ```
 
-Training
+Training and Evaluation
 -----
-1. See files under `/runs` for training configs for MultiResCNN and RAC models.
-2. For LAAT (Bi-LSTM) models, switch to `LAAT` branch and use the training configs in the root folder.
+1. See files under `/runs` for training configs for MultiResCNN without HiCu applied, with HiCu applied and with HiCu and Hyperbolic Embeddings applied.
 
 Acknowledgement
 -----
